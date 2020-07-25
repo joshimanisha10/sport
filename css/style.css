@@ -52,6 +52,10 @@ label {
   font-size: 16px;
 }
 
+.nav-pills .nav-link:hover {
+ color:#000 !important;
+}
+
 @media (max-width: 480px) {
   .nav-pills .nav-link {
     font-size: 12px;
@@ -74,17 +78,17 @@ label {
 
 .nav-pills.with-background .nav-link:hover {
   /* color:  #E71021; */
-   color:  #E71021;
+   color:  #000 !important;
 }
 
 .nav-pills.with-background .nav-link.active {
-  background:  #E71021;
+  background:  #000;
   position: relative;
   transition: 0s;
 }
 
 .nav-pills.with-background .nav-link.active:hover {
-  color: #fff;
+  color: #000;
 }
 
 .nav-pills.with-background .nav-link.active:after {
@@ -122,7 +126,7 @@ label {
 
 .nav-pills.transparent .nav-link.active {
   background: transparent;
-  color: #E71021;
+  color: #000;
 }
 
 ul.pagination li {
@@ -171,7 +175,7 @@ ul.social-circle-icons li a {
 ul.social-circle-icons li a:hover {
   text-decoration: none;
   color: #fff;
-  background:  #E71021;
+  background:  #000;
 }
 
 .store-list h4 {
@@ -198,7 +202,7 @@ ul.social-circle-icons li a:hover {
 
 .store-list ul li a:hover {
   text-decoration: underline;
-  color:  #E71021;
+  color:  #000;
 }
 
 @media (max-width: 768px) {
@@ -238,7 +242,7 @@ iframe {
 a:focus, a:hover {
   text-decoration: none;
   outline: 0;
-  color:  #E71021;
+  color:  #000;
 }
 
 .form-control {
@@ -331,10 +335,19 @@ button {
 }
 
 .section-title h2 {
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 0.05em;
   text-align: center;
 }
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .section-title h2 {
+    font-size: 18px !important;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
 
 .section-title h2:before {
   content: " ";
@@ -1570,12 +1583,12 @@ ul.pagination .active a {
 }
 
 .product-details .content .nav .nav-item .nav-link:hover {
-  background:  #E71021;
+  background:  #000;
   color: #fff;
 }
 
 .product-details .content .nav .nav-item .nav-link.active {
-  background:  #E71021;
+  background:  #000;
 }
 
 .product-details .content .tab-content {
@@ -1585,14 +1598,6 @@ ul.pagination .active a {
 
 .product-slider {
   padding: 40px 0;
-}
-
-.product-slider .carousel-indicators li {
-  background: #888;
-}
-
-.product-slider .carousel-indicators li.active {
-  background:  #E71021;
 }
 
 .product-slider .slick-dots {
